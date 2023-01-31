@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Todo</h1>
+    <img src="images/icon-sun.svg" alt="toggle" id="mode">
+  </header>
+
+  <main>
+    <form method="get" class="create">
+      <input type="checkbox" aria-label="check" class="check">
+      <input type="text" aria-label="New todo" placeholder="Create a new todo..." id="created">
+    </form>
+
+    <ul class="list">
+      <li class='listRow' draggable="true"><form method="get"  class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>Complete online JavaScript course</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+
+      <li class='listRow' draggable="true"><form method="get" class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>Jog around the park 3x</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+
+      <li class='listRow' draggable="true"><form method="get" class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>10 minutes meditation</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+
+      <li class='listRow' draggable="true"><form method="get" class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>Read for 1 hour</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+
+      <li class='listRow' draggable="true"><form method="get" class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>Pick up groceries</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+
+      <li class='listRow' draggable="true"><form method="get" class="row">
+        <input type="checkbox" aria-label="check" class="checkboxes">
+        <p class='todoThing'>Complete Todo App on Frontend Mentor</p>
+        <img src="images/icon-cross.svg" alt="cross" class="cross">
+      </form></li>
+    </ul>
+    <ul class="testing"></ul>
+    <div class="listBtm">
+      <p><span id="dynamicNum">5</span> items left</p>
+      <p id="clearCp">Clear Completed</p>
+    </div>
+
+    <div class="bottomToggle">
+      <p id="all">All</p>
+      <p id="active">Active</p>
+      <p id="completed">Completed</p>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    <p>Drag and drop to reorder list</p>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Toluwalashe</a>.</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
